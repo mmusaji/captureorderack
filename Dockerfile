@@ -1,5 +1,6 @@
 FROM golang:1.10-alpine3.7
 #FROM golang:1.6
+USER nobody
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:$PATH
 
