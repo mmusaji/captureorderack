@@ -3,8 +3,6 @@ FROM golang:1.10-alpine3.7
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:$PATH
 
-USER nobody
-
 RUN apk --update add curl git
 
 RUN mkdir -p /go/src/github.com/mmusaji/captureorderack
