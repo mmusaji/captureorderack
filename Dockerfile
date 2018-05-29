@@ -1,10 +1,10 @@
-#FROM golang:1.10-alpine3.7
-FROM golang:1.6
-USER nobody
+FROM golang:1.10-alpine3.7
+#FROM golang:1.6
+#USER nobody
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:$PATH
 
-RUN yum --update add curl git
+RUN apk --update add curl git
 
 RUN mkdir -p /go/src/github.com/mmusaji/captureorderack
 # Set the working directory to the app directory
